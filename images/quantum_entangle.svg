@@ -1,0 +1,10 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'>
+  <rect width='1000' height='600' fill='#f0fbff'/>
+  <g fill='none' stroke='#0ea5e9' stroke-width='4'>
+    <ellipse cx='500' cy='300' rx='260' ry='120'/>
+    <ellipse cx='500' cy='300' rx='120' ry='260' transform='rotate(60 500 300)'/>
+    <ellipse cx='500' cy='300' rx='120' ry='260' transform='rotate(-60 500 300)'/>
+    <circle cx='500' cy='300' r='10' fill='#0ea5e9'/>
+  </g>
+</svg>

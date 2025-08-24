@@ -1,0 +1,13 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'>
+  <rect width='1000' height='600' fill='#eef6ff'/>
+  <g fill='none' stroke='#2563eb' stroke-width='4'>
+    <rect x='100' y='140' width='200' height='100' rx='12'/>
+    <rect x='400' y='140' width='200' height='100' rx='12'/>
+    <rect x='700' y='140' width='200' height='100' rx='12'/>
+    <text x='200' y='200' text-anchor='middle' font-family='Segoe UI, Arial' font-size='20' fill='#0f172a'>Data</text>
+    <text x='500' y='200' text-anchor='middle' font-family='Segoe UI, Arial' font-size='20' fill='#0f172a'>Train</text>
+    <text x='800' y='200' text-anchor='middle' font-family='Segoe UI, Arial' font-size='20' fill='#0f172a'>Deploy</text>
+    <path d='M300,190 H400'/><path d='M600,190 H700'/>
+  </g>
+</svg>

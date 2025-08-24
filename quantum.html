@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quantum Computing: The Next Frontier | Tech Blog</title>
-  <meta name="description" content="Quantum fundamentals explained plainly: qubits, entanglement, error correction, real uses, and pragmatic expectations.">
-  <meta name="keywords" content="Quantum Computing, Qubits, Entanglement, Error Correction, Post-Quantum Cryptography">
+  <meta name="description" content="Quantum Computing: The Next Frontier explained with engaging diagrams and clear language.">
+  <meta name="keywords" content="Technology, Cloud, Artificial Intelligence, Quantum, Blog">
   <meta name="author" content="Your Name">
   <meta property="og:title" content="Quantum Computing: The Next Frontier | Tech Blog">
-  <meta property="og:description" content="Quantum fundamentals explained plainly: qubits, entanglement, error correction, real uses, and pragmatic expectations.">
+  <meta property="og:description" content="Quantum Computing: The Next Frontier explained with engaging diagrams and clear language.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://yourdomain.com/quantum.html">
-  <meta property="og:image" content="images/quantum.svg">
+  <meta property="og:image" content="images/quantum_banner.svg">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+
 </head>
 <body>
-  <header class="hero">
-    <h1>Quantum Computing: The Next Frontier</h1>
-  </header>
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="cloud.html">Cloud</a>
+    <a href="ai.html">AI</a>
+    <a href="quantum.html">Quantum</a>
+  </nav>
   <main>
     <article>
-      <img class="hero" src="images/quantum.svg" alt="Vector illustration of quantum orbits and entangled nodes">
+      <img src="images/quantum_banner.svg" class="hero-img reveal" alt="Quantum Computing: The Next Frontier header illustration">
       
-<p>Quantum computing explores computation based on the rules of quantum mechanics, a world where particles can exist in multiple states at once and become correlated across distance. The key unit is the qubit. Unlike a classical bit that is 0 or 1, a qubit can be in a superposition of both. When multiple qubits interact, they can become entangled, creating a combined state that encodes relationships impossible to capture with independent bits. Algorithms exploit these properties to explore search spaces in ways that are intractable for classical approaches.</p>
-<p>Several qubit technologies compete today, including superconducting circuits, trapped ions, neutral atoms, and photonics. Each platform balances coherence time, gate fidelity, and scalability. Regardless of hardware, practical quantum computing must tame noise and errors. Error correction encodes one “logical” qubit across many noisy “physical” qubits, detecting and fixing faults on the fly. The overhead is huge, but research progress is steady as fabrication improves and control systems mature.</p>
-<p>What problems benefit? Three buckets stand out. First, simulation of quantum systems—molecules, materials, and chemical reactions—because nature itself is quantum. Better simulations could accelerate drug discovery or design catalysts for cleaner energy. Second, certain optimization and sampling problems can see speedups using algorithms that shape the probability landscape in useful ways. Third, cryptography: large‑scale quantum computers could compromise widely used public‑key schemes. This risk motivates investment in post‑quantum cryptography, which aims to safeguard communications even in a quantum era.</p>
-<p>For practitioners today, “quantum‑inspired” methods and hybrid workflows are practical entry points. Classical optimizers can coordinate with small quantum circuits to explore complex spaces. Developers prototype circuits with high‑level frameworks, test them on simulators, and run short jobs on early hardware. The skill set overlaps with classical software engineering—version control, testing, monitoring—plus a dose of linear algebra and complex numbers.</p>
-<p>It’s important to separate hype from progress. Quantum advantage is not universal; classical computers will remain better for many workloads. The field is in a pre‑industrial phase comparable to early aviation—remarkable demonstrations, clear potential, and plenty of engineering ahead. Sensible expectations focus on the next decade: larger, cleaner devices; better compilers; and specialized applications where quantum returns real value. In that trajectory, the biggest wins may come from combining quantum with classical tools to create hybrid systems that deliver practical speedups.</p>
-<p>Quantum computing ultimately broadens our computational palette. By adding a fundamentally different tool, it invites fresh approaches to long‑standing problems. Whether you follow the hardware race or care about future applications, now is a good time to build intuition, run experiments, and watch the science turn into engineering.</p>
+<p class="reveal">Quantum computing explores computation built on the rules of quantum mechanics. The basic unit is the <strong>qubit</strong>. While a classical bit is either 0 or 1, a qubit can be in a superposition of both. When qubits interact they can become entangled, producing correlations that cannot be explained classically. Algorithms exploit these properties to explore large spaces in ways that are different from—and sometimes asymptotically faster than—classical methods.</p>
+<figure class="clearfix reveal"><img src="images/quantum_qubits.svg" class="inline left" alt="Two qubits with a link illustrating correlation"><figcaption>Figure 1: Superposition and entanglement expand the search space.</figcaption></figure>
+<p class="reveal">Today several hardware approaches compete, including superconducting circuits, trapped ions, neutral atoms, and photonics. No platform is perfect; each balances coherence time, gate fidelity, and scalability. That is why <strong>error correction</strong> is central. It encodes one logical qubit across many physical qubits and uses repeated measurements—called syndromes—to detect and correct faults in real time. The overhead is large, but progress in fabrication, control electronics, and cryogenics keeps pushing the frontier forward.</p>
+<p class="reveal">Where might quantum help first? Three areas stand out. First, the simulation of quantum systems—molecules and materials—where the target itself is quantum. Better simulations could accelerate drug discovery or identify catalysts for cleaner energy. Second, certain optimization and sampling problems may benefit from algorithms that shape probability landscapes to find good candidates faster. Third, cryptography: sufficiently large quantum computers could threaten widely used public‑key schemes, which is why the security community is standardizing quantum‑resistant alternatives.</p>
+<figure class="clearfix reveal"><img src="images/quantum_entangle.svg" class="inline right" alt="Abstract orbits representing entanglement"><figcaption>Figure 2: Entanglement creates correlations that drive quantum speedups.</figcaption></figure>
+<p class="reveal">For practitioners today, hybrid workflows are the most practical path. Classical optimizers coordinate with short quantum circuits to explore complex spaces. Developers prototype with high‑level tools, simulate locally, and run experiments on early hardware. The engineering feels familiar—version control, testing, monitoring—plus a dash of linear algebra and complex numbers. Organizations start with education, small proofs of concept, and partnerships that keep expectations grounded while skills mature.</p>
+<p class="reveal">It helps to separate hype from progress. Quantum advantage is not universal; for many workloads classical computers will remain superior. The field resembles early aviation: remarkable demonstrations, clear potential, and lots of engineering ahead. Over the next decade expect cleaner, larger devices; better compilers; and specialized applications where quantum offers measurable value. The biggest wins may come from mixing quantum subroutines with strong classical heuristics to get the best of both worlds.</p>
+<p class="reveal">Ultimately, quantum computing adds a new instrument to the computational orchestra. It does not replace classical methods; it expands the palette. By building intuition now—through small experiments and thoughtful reading—you prepare your team to recognize the problems that match the medium when the hardware is ready.</p>
 
-      <p><a href="index.html">← Back to Home</a></p>
+      <p class="reveal"><a href="index.html">← Back to Home</a></p>
     </article>
   </main>
   <footer><p>&copy; 2025 Tech Blog</p></footer>
+  <script defer src="js/app.js"></script>
 </body>
 </html>

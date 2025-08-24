@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Blog — Cloud, AI & Quantum</title>
+  <meta name="description" content="Bright, modern explanations of Cloud, AI, and Quantum computing with engaging visuals.">
+  <meta name="keywords" content="Technology, Cloud, Artificial Intelligence, Quantum, Blog">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Tech Blog — Cloud, AI & Quantum">
+  <meta property="og:description" content="Bright, modern explanations of Cloud, AI, and Quantum computing with engaging visuals.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:image" content="images/banner.jpg">
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+
 </head>
 <body>
   <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Exploring the Latest in Technology</h1>
-      <p>Dive into Cloud, AI, and Quantum Computing</p>
-      <a href="#articles" class="btn">Learn More</a>
+    <div class="inner">
+      <h1 class="reveal">Fresh Takes on Cloud, AI & Quantum</h1>
+      <p class="reveal">Readable articles, bright illustrations, and playful animations.</p>
+      <a class="btn reveal" href="#articles">Browse Articles</a>
     </div>
   </header>
-
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="cloud.html">Cloud</a>
+    <a href="ai.html">AI</a>
+    <a href="quantum.html">Quantum</a>
+  </nav>
   <main id="articles">
-    <section>
-      <h2>Welcome</h2>
-      <p>This is a demo parallax blog site with a high-res hero banner.</p>
+    <section class="grid" aria-label="Latest">
+      <article class="card reveal"><h2><a href="cloud.html">The Rise of Cloud Computing</a></h2><p>Scale on demand, automate operations, and build globally.</p></article>
+      <article class="card reveal"><h2><a href="ai.html">Artificial Intelligence: Shaping the Future</a></h2><p>From perception to action—how AI augments human work.</p></article>
+      <article class="card reveal"><h2><a href="quantum.html">Quantum Computing: The Next Frontier</a></h2><p>Superposition, entanglement, and new ways to compute.</p></article>
     </section>
   </main>
-
-  <script src="js/app.js"></script>
+  <footer><p>&copy; 2025 Tech Blog · Built with HTML, CSS & JS</p></footer>
 </body>
 </html>

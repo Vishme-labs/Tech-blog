@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Rise of Cloud Computing | Tech Blog</title>
-  <meta name="description" content="Understand cloud computing fundamentals, architectures, security, cost management, and hybrid strategies—practical guidance with a balanced tone.">
-  <meta name="keywords" content="Cloud Computing, IaaS, PaaS, SaaS, Containers, DevOps, Hybrid Cloud, FinOps">
+  <meta name="description" content="The Rise of Cloud Computing explained with engaging diagrams and clear language.">
+  <meta name="keywords" content="Technology, Cloud, Artificial Intelligence, Quantum, Blog">
   <meta name="author" content="Your Name">
   <meta property="og:title" content="The Rise of Cloud Computing | Tech Blog">
-  <meta property="og:description" content="Understand cloud computing fundamentals, architectures, security, cost management, and hybrid strategies—practical guidance with a balanced tone.">
+  <meta property="og:description" content="The Rise of Cloud Computing explained with engaging diagrams and clear language.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://yourdomain.com/cloud.html">
-  <meta property="og:image" content="images/cloud.svg">
+  <meta property="og:image" content="images/cloud_banner.svg">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+
 </head>
 <body>
-  <header class="hero">
-    <h1>The Rise of Cloud Computing</h1>
-  </header>
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="cloud.html">Cloud</a>
+    <a href="ai.html">AI</a>
+    <a href="quantum.html">Quantum</a>
+  </nav>
   <main>
     <article>
-      <img class="hero" src="images/cloud.svg" alt="Vector illustration of a connected cloud network">
+      <img src="images/cloud_banner.svg" class="hero-img reveal" alt="The Rise of Cloud Computing header illustration">
       
-<p>Cloud computing has reshaped how individuals and organizations build, ship, and operate software. At its core, the cloud is a pool of shared, on‑demand computing resources—compute, storage, networking, and managed services—delivered over the internet. Instead of buying and maintaining racks of servers, teams rent what they need, when they need it, and scale up or down in minutes. This elasticity is the cloud’s superpower: a small prototype can become a global service without a forklift upgrade. For product teams, that translates into faster experiments, shorter feedback cycles, and less capital tied up in hardware.</p>
-<p>There are three broad service models. Infrastructure‑as‑a‑Service exposes raw building blocks such as virtual machines, block storage, and virtual networks that engineers can assemble like LEGO. Platform‑as‑a‑Service adds a layer of convenience: push your code and the platform handles runtime, scaling, and load balancing. Software‑as‑a‑Service sits at the top, offering complete applications accessible through a browser. Each model trades flexibility for convenience, and modern teams often mix them based on the problem at hand.</p>
-<p>Architecturally, the cloud encourages stateless services, containerization, and declarative infrastructure. Containers package apps and their dependencies so they run the same everywhere. Orchestration systems schedule these containers across clusters, keep them healthy, and roll out updates safely. Infrastructure‑as‑code tools capture servers, networks, and policies in version‑controlled templates, making environments reproducible and auditable. Together, these patterns reduce “works on my machine” moments and help teams recover quickly from failures.</p>
-<p>Security in the cloud is a shared responsibility. Providers secure the physical data centers and common control planes, while customers configure identity, encryption, and network boundaries. Good hygiene starts with strong identity and access management: least‑privilege roles, short‑lived credentials, and multi‑factor authentication. Data should be encrypted in transit and at rest, and secrets should live in a dedicated vault. Network segmentation, private endpoints, and web application firewalls minimize blast radius. Regular posture checks and threat detection complete the picture.</p>
-<p>Cost management matters because resource sprawl is real. Tag resources, set budgets and alerts, and match workload patterns to pricing models. Long‑running, predictable services may use reserved or committed instances; spiky tasks can run on ephemeral capacity. Autoscaling ties consumption to demand so you pay for what you use. FinOps blends engineering and finance practices to keep performance and spend aligned, using dashboards and reviews to catch surprises early.</p>
-<p>Hybrid and multi‑cloud strategies are increasingly common. A hybrid approach keeps sensitive systems on private infrastructure while bursting into public capacity for elastic needs. Multi‑cloud reduces dependency on any single provider and lets teams pick best‑of‑breed services. The trade‑off is complexity: networking, identity, and data gravity make portability non‑trivial. Pragmatic teams set clear reasons for going multi‑cloud—such as latency, compliance, or feature gaps—and standardize the developer experience to avoid fragmentation.</p>
-<p>Looking forward, serverless patterns, edge computing, and managed AI services are pushing the cloud closer to users and further from undifferentiated heavy lifting. The aim is simple: give developers powerful primitives while removing toil. Whether you’re deploying a weekend project or powering a global product, cloud computing provides the flexibility and reach to build faster, scale smarter, and operate with confidence.</p>
+<p class="reveal">Cloud computing changes how teams plan capacity, ship software, and pay for infrastructure. Instead of forecasting demand months in advance and purchasing hardware up front, organizations rent compute, storage, and networking as elastic utilities. That switch sounds simple, but it unlocks new habits: it becomes cheap to run short experiments, fast to scale successful ideas, and easier to design systems that withstand failures. The cloud is not a single product; it is a toolbox of reliable building blocks that can be assembled into anything from a weekend prototype to a globally distributed platform.</p>
+<p class="reveal">A helpful framework divides cloud services into three broad layers. <strong>Infrastructure‑as‑a‑Service</strong> exposes virtual machines, software‑defined networks, and various storage types. Engineers wire these together like Lego bricks when they need fine‑grained control. <strong>Platform‑as‑a‑Service</strong> abstracts more: you push code and define autoscaling rules, while the platform takes care of runtimes, load balancing, and rolling updates. <strong>Software‑as‑a‑Service</strong> goes further and delivers an entire application in your browser. Each step upward trades some flexibility for speed and simplicity, so teams often mix layers depending on the job at hand.</p>
+<figure class="clearfix reveal"><img src="images/cloud_diagram.svg" class="inline left" alt="Diagram of IaaS, PaaS, and SaaS"><figcaption>Figure 1: Service models map to different levels of control.</figcaption></figure>
+<p class="reveal">Architectures in the cloud tend to favor loose coupling and automation. Containers bundle code and dependencies so a service runs the same on every environment. Orchestrators schedule those containers across clusters, heal failures automatically, and roll out new versions with minimal disruption. <em>Infrastructure as code</em> expresses networks, gateways, subnets, and policies in version‑controlled templates so environments are reproducible and auditable. Observability—logs, metrics, and traces—turns a running system into something you can reason about. Together, these practices reduce “snowflake servers” and the human toil that used to accompany everyday operations.</p>
+<figure class="clearfix reveal"><img src="images/cloud_hybrid.svg" class="inline right" alt="Hybrid cloud linking private and public environments"><figcaption>Figure 2: Hybrid connects on‑prem systems with elastic public capacity.</figcaption></figure>
+<p class="reveal">Security in the cloud follows a shared‑responsibility model. Providers secure their facilities, hardware, and core control planes; customers are responsible for identity, encryption, and network boundaries in the context of their own apps. Good posture starts with least‑privilege access and multi‑factor authentication for administrators. Encrypt data in transit and at rest, store secrets in a dedicated vault, and segment networks so that sensitive systems are not reachable from the public internet. Beyond prevention, practice detection and response: centralize logs, define alerts, and run game days so procedures are muscle memory.</p>
+<p class="reveal">Cost management is as cultural as it is technical. Untagged resources and forgotten test environments quietly grow bills. Tag everything by owner and purpose, set budgets with alerts, and align pricing models to workload patterns. Predictable, steady services often benefit from reserved capacity, while bursty tasks run cheaply on short‑lived instances. Autoscaling ties spend to demand so you pay for what you use. Many organizations adopt a <strong>FinOps</strong> mindset that blends engineering, finance, and product to continually connect costs to business value.</p>
+<p class="reveal">Not every workload moves all at once. Regulations, data gravity, or latency needs often lead to <strong>hybrid</strong> designs that keep core systems close to protected data while pushing stateless compute to managed platforms. Some teams choose <strong>multi‑cloud</strong> strategies to reduce provider concentration or to use a best‑in‑class service for a specific task. That flexibility adds operational overhead, so it is wise to write down clear reasons for spanning platforms and to invest in tooling that smooths differences.</p>
+<p class="reveal">The direction is steady: remove undifferentiated heavy lifting and give builders safer, faster paths to value. Serverless functions, managed databases, and edge runtimes continue to shorten the gap between an idea and a robust service. Whether you are exploring a side project or operating a mission‑critical product, cloud computing offers a practical way to experiment boldly and scale with confidence.</p>
 
-      <p><a href="index.html">← Back to Home</a></p>
+      <p class="reveal"><a href="index.html">← Back to Home</a></p>
     </article>
   </main>
   <footer><p>&copy; 2025 Tech Blog</p></footer>
+  <script defer src="js/app.js"></script>
 </body>
 </html>
