@@ -1,0 +1,11 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'>
+  <rect width='1000' height='600' fill='#f1f5ff'/>
+  <g fill='none' stroke='#2563eb' stroke-width='4'>
+    <rect x='150' y='160' width='280' height='200' rx='18'/>
+    <rect x='570' y='160' width='280' height='200' rx='18'/>
+    <text x='290' y='270' text-anchor='middle' font-family='Segoe UI, Arial' font-size='22' fill='#0f172a'>Private</text>
+    <text x='710' y='270' text-anchor='middle' font-family='Segoe UI, Arial' font-size='22' fill='#0f172a'>Public</text>
+    <path d='M430,260 C500,210 520,310 570,260' stroke-dasharray='8 10'/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'>
+  <rect width='1000' height='600' fill='#f4ecff'/>
+  <g fill='none' stroke='#7c3aed' stroke-width='4'>
+    <rect x='380' y='200' width='240' height='180' rx='20'/>
+    <circle cx='440' cy='270' r='14'/><circle cx='560' cy='270' r='14'/>
+    <line x1='500' y1='200' x2='500' y2='150'/><circle cx='500' cy='140' r='10'/>
+  </g>
+</svg>

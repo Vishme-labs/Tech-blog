@@ -1,0 +1,14 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'>
+  <rect width='1000' height='600' fill='#eef6ff'/>
+  <g fill='none' stroke='#2563eb' stroke-width='4'>
+    <rect x='100' y='120' width='250' height='120' rx='14'/>
+    <rect x='375' y='120' width='250' height='120' rx='14'/>
+    <rect x='650' y='120' width='250' height='120' rx='14'/>
+    <text x='225' y='190' text-anchor='middle' font-family='Segoe UI, Arial' font-size='22' fill='#0f172a'>IaaS</text>
+    <text x='500' y='190' text-anchor='middle' font-family='Segoe UI, Arial' font-size='22' fill='#0f172a'>PaaS</text>
+    <text x='775' y='190' text-anchor='middle' font-family='Segoe UI, Arial' font-size='22' fill='#0f172a'>SaaS</text>
+    <path d='M225,240 V480'/><path d='M500,240 V480'/><path d='M775,240 V480'/>
+    <rect x='160' y='480' width='680' height='40' rx='10'/>
+  </g>
+</svg>
