@@ -1,17 +1,38 @@
-:root{--bg:#0e1320;--card:#121a2d;--text:#e8f3fb;--muted:#a7c7d9;--accent1:#4facfe;--accent2:#00f2fe;}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
-header.hero{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;text-align:center;padding:2.5rem 1rem .5rem;position:relative;overflow:hidden;animation:fadeIn 1.2s ease;}
-header.hero .tagline{opacity:.9;margin-top:.25rem}
-.hero img{width:100%;max-width:1180px;margin:1rem auto;display:block;border-radius:12px;box-shadow:0 12px 36px rgba(0,0,0,.35);opacity:0;animation:fadeInImage 1.4s ease forwards .2s;}
-.navbar{display:flex;gap:1rem;justify-content:center;padding:.75rem 1rem 1.25rem;}
-.navbar a{color:#002a3a;background:#e6fbff;border-radius:999px;padding:.5rem .9rem;text-decoration:none;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.18);} .navbar a:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.25)}
-main{max-width:1200px;margin:0 auto;padding:2rem 1rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;}
-.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:1.2rem 1.2rem 1.4rem;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .25s ease,box-shadow .25s ease;opacity:0;animation:rise .7s ease forwards;}
-.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.35)} .card h2{margin:.2rem 0 .5rem;font-size:1.25rem} .card p{color:var(--muted);margin:0}
-footer{text-align:center;padding:2rem 1rem;color:#b7d6e5;border-top:1px solid rgba(255,255,255,.08)}
-article{max-width:920px;margin:0 auto;padding:2rem 1rem;}
-article img.hero{width:100%;max-width:900px;border-radius:12px;display:block;margin:1rem auto;opacity:0;animation:fadeInImage 1.1s ease forwards;}
-article h1{font-size:2rem;margin-top:.2rem}article h2{margin-top:2rem}
-a{color:#76e5ff}a:hover{text-decoration:none}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeInImage{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+.hero {
+  height: 100vh;
+  background: url('../images/banner.jpg') center/cover fixed no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #0056b3;
+}
