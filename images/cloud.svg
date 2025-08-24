@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 520'>
+<defs><linearGradient id='gc' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#4facfe'/><stop offset='100%' stop-color='#00f2fe'/></linearGradient></defs>
+<rect width='900' height='520' fill='#0b1220'/>
+<g fill='none' stroke='url(#gc)' stroke-width='3' stroke-opacity='0.9'>
+<path d='M120,320c0-60,50-110,112-110c10-60,64-106,128-106c73,0,132,59,132,132c0,2-0.05,4-0.14,6c50,2,90,43,90,94c0,52-42,94-94,94H214c-52,0-94-42-94-94z'/></g>
+<g fill='#00f2fe' opacity='0.8'><circle cx='220' cy='350' r='6'/><circle cx='280' cy='270' r='6'/><circle cx='420' cy='250' r='6'/><circle cx='520' cy='330' r='6'/><circle cx='650' cy='360' r='6'/></g>
+<g stroke='#6ee0ff' stroke-width='2' opacity='0.6'><line x1='220' y1='350' x2='420' y2='250'/><line x1='280' y1='270' x2='520' y2='330'/><line x1='520' y1='330' x2='650' y2='360'/></g>
+</svg>
