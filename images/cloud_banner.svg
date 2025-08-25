@@ -1,7 +1,12 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 640'>
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 600'>
   <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
     <stop offset='0%' stop-color='#a8e0ff'/><stop offset='100%' stop-color='#fdfbfb'/></linearGradient></defs>
-  <rect width='1600' height='640' fill='url(#g)'/>
-  <g fill='none' stroke='#2563eb' stroke-width='5' opacity='.8'><path d='M60,420 C300,320 500,540 720,440 S1120,300 1540,360'/></g>
-  <g fill='#22d3ee' opacity='.9'><circle cx='240' cy='140' r='10'/><circle cx='1380' cy='420' r='12'/><circle cx='980' cy='220' r='8'/><circle cx='620' cy='480' r='10'/></g>
+  <rect width='1600' height='600' fill='url(#g)'/>
+  <g fill='none' stroke='#2563eb' stroke-width='6'>
+    <path d='M120 420 C340 330 540 540 760 430 S1120 320 1480 380'/>
+    <rect x='260' y='210' width='220' height='120' rx='16'/>
+    <rect x='530' y='210' width='220' height='120' rx='16'/>
+    <rect x='800' y='210' width='220' height='120' rx='16'/>
+  </g>
 </svg>
