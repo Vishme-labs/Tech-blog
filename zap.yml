@@ -1,0 +1,2 @@
+- name: ZAP Full Scan
+  uses: zaproxy/action-full-scan@v0.12.0
