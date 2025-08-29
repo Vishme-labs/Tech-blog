@@ -7,7 +7,7 @@
     token: # optional, default is ${{ github.token }}
     # Target URL
     target: 
-    # Relative path of the ZAP configuration file
+    target: 'https://labs.vishmeluck.com/'
     rules_file_name: # optional
     # The Docker file to be executed
     docker_name: # default is ghcr.io/zaproxy/zaproxy:stable
@@ -21,9 +21,3 @@
     allow_issue_writing: # optional, default is true
     # The name of the artifact that contains the ZAP reports
     artifact_name: # optional, default is zap_scan
-          
-steps:
-  - name: ZAP Scan
-    uses: zaproxy/action-full-scan@v0.12.0
-    with:
-      target: 'https://labs.vishmeluck.com/'
