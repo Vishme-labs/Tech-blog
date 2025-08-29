@@ -6,7 +6,6 @@
     # GitHub Token to create issues in the repository
     token: # optional, default is ${{ github.token }}
     # Target URL
-    target: 
     target: 'https://labs.vishmeluck.com/'
     rules_file_name: # optional
     # The Docker file to be executed
