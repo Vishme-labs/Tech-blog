@@ -1,2 +1,3 @@
 - name: ZAP Full Scan
   uses: zaproxy/action-full-scan@v0.12.0
+  target: 'https://labs.vishmeluck.com/'
