@@ -1,6 +1,6 @@
-<nav aria-label="Primary" style="background:linear-gradient(90deg,#2563eb,#7c3aed);box-shadow:0 2px 16px rgba(44,62,80,.08);">
-    <a href="index.html" style="color:#fff;font-weight:700;">Home</a>
-    <a href="blogs.html" style="color:#fff;font-weight:700;">Blogs</a>
+<nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
   </nav>
   <header style="background:linear-gradient(120deg,#2563eb 60%,#7c3aed 100%);padding:3rem 1rem 2rem 1rem;text-align:center;color:#fff;box-shadow:0 8px 32px rgba(44,62,80,.10);">
     <h1 style="font-size:2.6rem;margin-bottom:.5rem;letter-spacing:-1px;">Explore All Tech Blog Articles</h1>
@@ -8,7 +8,7 @@
     <img src="images/homepage_banner.png" alt="Tech Blog Banner" style="max-width:340px;width:100%;border-radius:18px;box-shadow:0 10px 36px rgba(44,62,80,.12);margin-top:1rem;">
   </header>
   <main style="background:linear-gradient(120deg,#f8fafc 60%,#e0e7ef 100%);min-height:70vh;">
-    <section class="grid" aria-label="Blog Tiles" style="margin:0 auto;padding:2.5rem 1rem 2rem 1rem;max-width:1200px;gap:2rem;">
+    <section class="blog-grid" aria-label="Blog Tiles">
       <article class="blog-tile">
         <h2><a href="cloud.html">The Rise of Cloud Computing</a></h2>
         <p>Scale on demand, automate operations, and build globally.</p>
@@ -31,6 +31,14 @@
       </article>
     </section>
     <style>
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin: 0 auto;
+        padding: 2.5rem 1rem 2rem 1rem;
+        max-width: 1200px;
+      }
       .blog-tile {
         border-radius: 20px;
         background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
@@ -40,6 +48,10 @@
         border: none;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
       }
       .blog-tile:hover {
         transform: translateY(-10px) scale(1.04);
@@ -63,10 +75,6 @@
         color: #475569;
         font-size: 1.08rem;
         margin-top: .2rem;
-      }
-      .grid {
-        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-        gap:2rem;
       }
     </style>
   </main>
