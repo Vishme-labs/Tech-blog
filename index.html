@@ -15,6 +15,83 @@
   <meta property="og:image" content="images/homepage_banner.png">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #f8fafc 0%, #e0c3fc 50%, #8ec5fc 100%);
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+      color: #222;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(44,62,80,.10);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #7f53ac 0%, #657ced 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .btn {
+      background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+      color: #222;
+      border: none;
+      border-radius: 30px;
+      padding: 0.8rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1.2rem;
+      box-shadow: 0 4px 16px rgba(44,62,80,.10);
+      transition: background .3s, color .3s, transform .2s;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+      color: #111;
+      transform: scale(1.05);
+    }
+    .grid .card {
+      background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(44,62,80,.10);
+      padding: 2rem 1.5rem;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      transition: box-shadow .3s, transform .3s, background .3s;
+    }
+    .grid .card:hover {
+      background: linear-gradient(135deg, #e0e7ef 60%, #fcb69f 100%);
+      box-shadow: 0 18px 44px rgba(44,62,80,.18);
+      transform: translateY(-10px) scale(1.04);
+    }
+    .grid .card h2 a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .grid .card h2 a:hover {
+      color: #7c3aed;
+    }
+    .grid .card p {
+      color: #475569;
+      font-size: 1.08rem;
+      margin-top: .2rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .grid .card { padding: 1.2rem 0.7rem; }
+    }
+  </style>
   <script defer src="js/app.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-975BJH8JTK"></script>
@@ -31,7 +108,11 @@
   <header class="hero">
     <div class="inner">
       <h1 class="reveal">Fresh Takes on Cloud, AI & Quantum</h1>
-      <p class="reveal">Readable articles, bright illustrations, and playful animations.</p>
+      <p class="reveal">Readable articles, bright illustrations, and playful animations.<br>
+        <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank" rel="noopener">What is Cloud Computing?</a> |
+        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" rel="noopener">What is AI?</a> |
+        <a href="https://en.wikipedia.org/wiki/Quantum_computing" target="_blank" rel="noopener">What is Quantum Computing?</a>
+      </p>
       <a class="btn reveal" href="#articles">Browse Articles</a>
     </div>
   </header>
@@ -60,6 +141,11 @@
   </main>
   <footer>
     <p>Blog - <a href="https://vishmeluck.com" target="_blank" rel="noopener" style="color:#2563eb;text-decoration:underline;">Vishmeluck</a> <span id="year"></span></p>
+    <p style="font-size:0.95rem;margin-top:0.5rem;">
+      <a href="https://www.cloudflare.com/learning/cloud/what-is-cloud-computing/" target="_blank" rel="noopener">Cloud Computing Guide</a> |
+      <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" target="_blank" rel="noopener">AI Explained by IBM</a> |
+      <a href="https://www.nature.com/subjects/quantum-computing" target="_blank" rel="noopener">Quantum Computing Research</a>
+    </p>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
