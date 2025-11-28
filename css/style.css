@@ -36,3 +36,11 @@ figcaption{font-size:.9rem;color:#64748b;margin-top:.2rem}
 footer{text-align:center;padding:2rem 1rem;color:#334155;border-top:1px solid rgba(2,8,23,.06)}
 .reveal{opacity:0;transform:translateY(12px);transition:.6s ease}
 .reveal.in{opacity:1;transform:none}
+
+/* Additional classes for article pages */
+.navbar{background:rgba(255,255,255,.8);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);display:flex;justify-content:center;gap:.8rem;padding:.6rem 1rem;border-bottom:1px solid rgba(2,8,23,.06)}
+.navbar a{color:var(--ink);text-decoration:none;font-weight:700;padding:.4rem .8rem;border-radius:8px}
+.navbar a:hover{background:rgba(37,99,235,.08)}
+.article-container{max-width:960px;margin:0 auto;padding:2rem 1rem}
+.article-meta{color:var(--muted);font-size:.9rem;margin:.5rem 0 1.5rem 0}
+.article-banner{width:100%;max-width:600px;height:auto;border-radius:12px;box-shadow:0 10px 24px rgba(2,8,23,.08);margin:1.5rem 0;display:block;margin-left:auto;margin-right:auto}
