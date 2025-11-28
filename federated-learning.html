@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Bootstrap Icons CDN for social icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federated Learning: Collaborative ML with Privacy | Vishmeluck</title>
+  <meta name="description" content="An introduction to federated learning: how collaborative machine learning works while preserving user data privacy and answering deployment challenges.">
+  <meta name="keywords" content="federated learning, privacy, distributed ML, edge AI">
+  <meta property="og:title" content="Federated Learning: Collaborative ML with Privacy">
+  <meta property="og:description" content="How federated learning enables collaborative models while keeping user data local and private.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+  </nav>
+  <main class="article-container">
+    <header>
+      <h1>Federated Learning: Collaborative ML with Privacy</h1>
+      <p class="article-meta">Published: November 28, 2025</p>
+    </header>
+    <article>
+      <h2>What is Federated Learning?</h2>
+      <p class="reveal">Federated learning is a distributed machine learning approach where model training occurs across multiple devices or servers holding local data samples, without exchanging that data. Instead of collecting raw data centrally, systems share model updates—gradients or weights—so a global model can be improved while preserving user privacy.</p>
+
+      <h2>Privacy Benefits and Techniques</h2>
+      <p class="reveal">This architecture reduces privacy risks because raw user data remains on-device. Complementary techniques such as secure aggregation, differential privacy, and homomorphic encryption further minimize information leakage from aggregated updates, making federated learning suitable for sensitive domains like healthcare and finance.</p>
+
+      <h3>Secure Aggregation and Differential Privacy</h3>
+      <p class="reveal">Secure aggregation cryptographically combines model updates so the server cannot inspect individual contributions. Differential privacy adds calibrated noise to updates, guaranteeing mathematically bounded privacy loss while still enabling useful model improvements.</p>
+
+      <h2>System Design and Challenges</h2>
+      <p class="reveal">Federated learning must handle heterogeneity across devices (computation, network, data distribution) and intermittent connectivity. Communication efficiency is critical; techniques like model compression, sparse updates, and periodic aggregation reduce bandwidth use. Robustness is also essential to defend against poisoned updates or adversarial participants.</p>
+
+      <h2>Practical Applications</h2>
+      <p class="reveal">Federated learning powers privacy-preserving personalization in mobile keyboards, recommendation systems, and medical research where data cannot leave institutional boundaries. Its use cases grow as regulatory pressure and privacy expectations increase worldwide.</p>
+
+      <h2>Future Outlook</h2>
+      <p class="reveal">As tooling and standards mature, federated learning will become more accessible for enterprises. Better tooling for monitoring, governance, and secure enrollment—along with hybrid architectures that combine local and centralized training—will expand adoption while maintaining high privacy guarantees.</p>
+
+      <p class="reveal"><a href="blogs.html">← Back to Blogs</a></p>
+    </article>
+  </main>
+  <footer>
+    Blog - <a href="https://vishmeluck.com" target="_blank">Vishmeluck</a> &copy; <span id="year"></span>
+    <div style="margin:0.7rem 0 0.2rem 0; font-size:1.5rem; display:flex; gap:1.1rem; align-items:center; justify-content:center;">
+      <a href="https://x.com/vishmeluck_labs?s=21" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Vishme-labs" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      <a href="https://www.youtube.com/@Vish_me_luck" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

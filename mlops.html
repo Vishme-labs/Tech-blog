@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Bootstrap Icons CDN for social icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLOps: Operationalizing Machine Learning | Vishmeluck</title>
+  <meta name="description" content="MLOps practices help teams deploy, monitor, and maintain machine learning models in production—learn best practices and tooling.">
+  <meta name="keywords" content="MLOps, model deployment, ML lifecycle, monitoring, CI/CD">
+  <meta property="og:title" content="MLOps: Operationalizing Machine Learning">
+  <meta property="og:description" content="Best practices for productionizing machine learning models, from CI/CD to monitoring and governance.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+  </nav>
+  <main class="article-container">
+    <header>
+      <h1>MLOps: Operationalizing Machine Learning</h1>
+      <p class="article-meta">Published: November 28, 2025</p>
+    </header>
+    <article>
+      <h2>What Is MLOps?</h2>
+      <p class="reveal">MLOps blends software engineering best practices with data science to manage the full lifecycle of machine learning models. It covers versioning, automated testing, deployment pipelines, monitoring, and governance to ensure reliable model behavior in production.</p>
+
+      <h2>Key Components</h2>
+      <p class="reveal">Core components include reproducible pipelines, data and model versioning, automated CI/CD for models, canary and blue-green deployments, and real-time monitoring for performance and data drift.</p>
+
+      <h3>Monitoring and Observability</h3>
+      <p class="reveal">Observability focuses on model accuracy, latency, input distribution, and feature drift. Alerts and automated rollback strategies help maintain model quality and business continuity.</p>
+
+      <h2>Tooling and Frameworks</h2>
+      <p class="reveal">Common tools include Kubeflow, MLflow, Tecton, and CI/CD platforms integrated with cloud-native infrastructure. Choosing the right stack depends on scale, team skills, and compliance needs.</p>
+
+      <h2>Best Practices</h2>
+      <p class="reveal">Establish clear ownership for models, automate testing, use feature stores for consistent data, and incorporate governance for auditing and reproducibility. Collaboration between SRE, data engineering, and ML teams accelerates delivery while reducing risk.</p>
+
+      <p class="reveal"><a href="blogs.html">← Back to Blogs</a></p>
+    </article>
+  </main>
+  <footer>
+    Blog - <a href="https://vishmeluck.com" target="_blank">Vishmeluck</a> &copy; <span id="year"></span>
+    <div style="margin:0.7rem 0 0.2rem 0; font-size:1.5rem; display:flex; gap:1.1rem; align-items:center; justify-content:center;">
+      <a href="https://x.com/vishmeluck_labs?s=21" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Vishme-labs" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      <a href="https://www.youtube.com/@Vish_me_luck" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
