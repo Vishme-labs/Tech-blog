@@ -4,9 +4,11 @@
   --bg-card: #ffffff;
   --text-main: #111827;
   --text-muted: #4b5563;
-  --primary: #4f46e5; /* Indigo 600 */
+  --primary: #4f46e5;
+  /* Indigo 600 */
   --primary-hover: #4338ca;
-  --accent: #8b5cf6; /* Violet 500 */
+  --accent: #8b5cf6;
+  /* Violet 500 */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -31,7 +33,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-main);
   font-weight: 700;
   line-height: 1.2;
@@ -156,15 +163,55 @@ a:hover {
 /* Navigation */
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  /* Left align */
+  align-items: center;
   gap: 2rem;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
+  /* Added side padding */
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-brand {
+  font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  /* Distinct, heavy font */
+  font-size: 1.8rem;
+  /* Larger font */
+  font-weight: 900;
+  text-transform: uppercase;
+  /* All CAPS */
+  color: var(--text-main);
+  margin-right: auto;
+  /* Push other items to the right if needed, but here we want brand left, others left too? Let's keep loop flow. Wait, "Shift menu left. On left add brand". So [Brand] [Menu Links] ... [Checkout]. Let's stick to justify-content: flex-start and gap. */
+  margin-right: 2rem;
+  /* distinct spacing */
+  letter-spacing: 0.05em;
+}
+
+.nav-checkout {
+  background: linear-gradient(45deg, #FF512F, #DD2476);
+  /* Colorful gradient */
+  color: white !important;
+  /* Force white text */
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: auto;
+  /* Push checkout to the far right? Or keep with menu? "Add an option in the menu". Usually means alongside links. But "Checkout" is often a CTA. Let's keep it with links but distinct. */
+}
+
+.nav-checkout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(221, 36, 118, 0.6);
+  color: white;
 }
 
 nav a {
@@ -173,7 +220,7 @@ nav a {
   font-size: 1.1rem;
 }
 
-nav a:hover {
+nav a:not(.nav-checkout):not(.nav-brand):hover {
   color: var(--primary);
 }
 
@@ -193,7 +240,7 @@ nav a:hover {
   padding: 2rem;
   box-shadow: var(--shadow-md);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0,0,0,0.02);
+  border: 1px solid rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -226,6 +273,7 @@ nav a:hover {
 .card h2 a {
   color: var(--text-main);
 }
+
 .card h2 a:hover {
   color: var(--primary);
 }
@@ -269,6 +317,7 @@ article img.inline.left {
   margin-right: 2rem;
   max-width: 40%;
 }
+
 article img.inline.right {
   float: right;
   margin-left: 2rem;
@@ -298,7 +347,7 @@ footer {
   text-align: center;
   padding: 4rem 1rem;
   background: white;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: auto;
 }
 
@@ -314,9 +363,16 @@ footer i:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.5rem; }
-  .grid { grid-template-columns: 1fr; }
-  article img.inline.left, article img.inline.right {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  article img.inline.left,
+  article img.inline.right {
     float: none;
     display: block;
     margin: 1.5rem auto;
