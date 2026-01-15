@@ -63,7 +63,8 @@ a:hover {
 /* Hero Section */
 .hero {
   background: var(--bg-card);
-  padding: 4rem 1rem 6rem 1rem;
+  padding: 8rem 1rem 8rem 1rem;
+  /* Increased padding for better parallax visibility */
   text-align: center;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
@@ -71,19 +72,20 @@ a:hover {
   position: relative;
   overflow: hidden;
   margin-bottom: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/banner-bg.jpg');
+  /* Overlay + Image */
+  background-attachment: fixed;
+  /* Parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* Ensure text is white on dark background */
 }
 
-/* Abstract distinct whitish background pattern for hero */
+/* Remove the old abstract pattern since we have a real image now */
 .hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(79, 70, 229, 0.03) 0%, transparent 50%);
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .hero .inner {
@@ -96,17 +98,23 @@ a:hover {
 .hero h1 {
   font-size: 3.5rem;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #111827 0%, #4f46e5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  /* Override gradient text for better readability on image if needed, or keep it if it pops. 
+     Let's make it white for better contrast against the image overlay */
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #ffffff;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto 2rem;
+  color: #e5e7eb;
+  /* Lighter text for description on dark bg */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero img.hero-img {
@@ -169,7 +177,8 @@ nav {
   gap: 2rem;
   padding: 1.5rem 2rem;
   /* Added side padding */
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  /* Slightly more opaque for better contrast */
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -182,7 +191,8 @@ nav {
   /* Distinct, heavy font */
   font-size: 1.8rem;
   /* Larger font */
-  font-weight: 900;
+  font-weight: 700;
+  /* Reduced from 900 */
   text-transform: uppercase;
   /* All CAPS */
   color: var(--text-main);
