@@ -12,13 +12,3 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 reveal(); // Trigger once on load
-
-// Navbar scroll effect
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-});
