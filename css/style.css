@@ -147,6 +147,36 @@ a:hover {
   transform: translateY(-5px);
 }
 
+/* Blogs Hero */
+.blog-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/blogs-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 8rem 1rem 6rem 1rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, .10);
+  margin-bottom: 2rem;
+}
+
+.blog-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.blog-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  color: #e5e7eb;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* Buttons */
@@ -171,46 +201,64 @@ a:hover {
 }
 
 /* Navigation */
-/* Navigation */
+/* Navigation - Default (Article Pages and Scrolled) */
 nav {
   display: flex;
   justify-content: flex-start;
-  /* Left align */
   align-items: center;
   gap: 2rem;
   padding: 1.5rem 2rem;
-  /* Added side padding */
-  background: rgba(255, 255, 255, 0.9);
-  /* Slightly more opaque for better contrast */
-  backdrop-filter: blur(10px);
-  position: sticky;
+  background: #ffffff;
+  /* Solid White for articles */
+  position: fixed;
   top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* Default shadow */
+  transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navigation - Transparent State (Home/Blogs Initial) */
+nav.transparent-nav {
+  position: fixed;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Navigation - Scrolled State (For Transparent Navs becoming solid) */
+nav.transparent-nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
 }
 
 .nav-brand {
-  font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-  /* Distinct, heavy font */
+  font-family: 'Aptos', sans-serif;
   font-size: 1.8rem;
-  /* Larger font */
-  font-weight: 700;
-  /* Reduced from 900 */
+  font-weight: 200;
   text-transform: uppercase;
-  /* All CAPS */
   color: var(--text-main);
+  /* Default Dark for articles */
   margin-right: auto;
-  /* Push other items to the right if needed, but here we want brand left, others left too? Let's keep loop flow. Wait, "Shift menu left. On left add brand". So [Brand] [Menu Links] ... [Checkout]. Let's stick to justify-content: flex-start and gap. */
   margin-right: 2rem;
-  /* distinct spacing */
-  letter-spacing: 0.05em;
+  letter-spacing: 0.005em;
+  transition: color 0.3s ease;
+}
+
+/* Brand Color on Transparent */
+nav.transparent-nav .nav-brand {
+  color: white;
+}
+
+/* Brand Color on Scrolled Transparent */
+nav.transparent-nav.scrolled .nav-brand {
+  color: var(--text-main);
 }
 
 .nav-checkout {
   background: linear-gradient(45deg, #FF512F, #DD2476);
-  /* Colorful gradient */
   color: white !important;
-  /* Force white text */
   padding: 0.5rem 1.25rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -218,7 +266,6 @@ nav {
   box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-left: auto;
-  /* Push checkout to the far right? Or keep with menu? "Add an option in the menu". Usually means alongside links. But "Checkout" is often a CTA. Let's keep it with links but distinct. */
 }
 
 .nav-checkout:hover {
@@ -230,11 +277,28 @@ nav {
 nav a {
   font-weight: 600;
   color: var(--text-main);
+  /* Default Dark for articles */
   font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Link Color on Transparent */
+nav.transparent-nav a {
+  color: white;
+}
+
+/* Link Color on Scrolled Transparent */
+nav.transparent-nav.scrolled a {
+  color: var(--text-main);
 }
 
 nav a:not(.nav-checkout):not(.nav-brand):hover {
   color: var(--primary);
+}
+
+/* Adjust content spacing for fixed nav on article pages */
+nav:not(.transparent-nav)+main {
+  padding-top: 5rem;
 }
 
 /* Grid & Cards */
