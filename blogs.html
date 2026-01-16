@@ -24,6 +24,59 @@
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659345833271654"
     crossorigin="anonymous"></script>
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      margin: 0 auto;
+      padding: 3rem 1rem 3rem 1rem;
+      max-width: 1200px;
+    }
+
+    .blog-tile {
+      border-radius: 20px;
+      background: var(--bg-card);
+      box-shadow: 0 8px 32px rgba(44, 62, 80, .10);
+      padding: 2.5rem 1.5rem;
+      transition: box-shadow .3s, transform .3s, background .3s;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .blog-tile:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 44px rgba(44, 62, 80, .18);
+      border-color: rgba(79, 70, 229, 0.1);
+    }
+
+    .blog-tile h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .blog-tile h2 a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .blog-tile h2 a:hover {
+      color: var(--primary);
+    }
+
+    .blog-tile p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,170 +87,120 @@
     <a href="https://vishmeluck.com" class="nav-checkout">Explore</a>
   </nav>
   <header class="blog-hero">
-    <h1>Explore All Tech Blog Articles</h1>
-    <p>Browse the latest insights on Cloud, AI, Quantum, Edge Computing, and AI Coding. Click a tile to read the full
-      article.</p>
+    <div class="inner">
+      <h1>Explore All Tech Blog Articles</h1>
+      <p>Browse the latest insights on Cloud, AI, Quantum, Edge Computing, and AI Coding. Click a tile to read the full
+        article.</p>
+    </div>
   </header>
-  <main style="background:linear-gradient(120deg,#f8fafc 60%,#e0e7ef 100%);min-height:70vh;">
+  <main>
     <section class="blog-grid" aria-label="Blog Tiles">
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="cloud.html">The Rise of Cloud Computing</a></h2>
         <p>Scale on demand, automate operations, and build globally.</p>
       </article>
-      <h2><a href="ai.html">Artificial Intelligence: Shaping the Future</a></h2>
-      <p>From perception to action—how AI augments human work.</p>
+      <article class="blog-tile reveal">
+        <h2><a href="ai.html">Artificial Intelligence: Shaping the Future</a></h2>
+        <p>From perception to action—how AI augments human work.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="quantum.html">Quantum Computing: The Next Frontier</a></h2>
         <p>Superposition, entanglement, and new ways to compute.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="edge.html">Edge Computing: Power at the Periphery</a></h2>
         <p>Real-time data, IoT, and distributed intelligence at the edge.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="ai-coding.html">AI Coding: Machines That Write Code</a></h2>
         <p>How AI is transforming software development and coding workflows.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="generative-ai.html">Generative AI: The Next Frontier</a></h2>
         <p>How generative models are powering creative machines and revolutionizing industries.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="5g-future.html">5G and Beyond: The Future of Connectivity</a></h2>
         <p>How 5G and next-gen wireless are reshaping communication and IoT.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="edge-ai.html">Edge AI: Intelligence at the Source</a></h2>
         <p>Machine learning at the edge for real-time analytics and smarter IoT.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="quantum-networking.html">Quantum Networking: The Next Internet</a></h2>
         <p>Ultra-secure communication and a new era of internet connectivity.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="green-computing.html">Green Computing: Sustainable Tech for the Future</a></h2>
         <p>How technology is reducing energy consumption and environmental impact.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="zero-trust.html">Zero Trust Security: Rethinking Cyber Defense</a></h2>
         <p>Modern cybersecurity for a cloud-first world—never trust, always verify.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="ai-healthcare.html">AI in Healthcare: Revolutionizing Medicine</a></h2>
         <p>How artificial intelligence is transforming diagnostics and patient care.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="blockchain-apps.html">Blockchain Beyond Crypto: Real-World Applications</a></h2>
         <p>How blockchain is being used in supply chain, identity, and more.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="augmented-reality.html">Augmented Reality: Blending Digital and Physical Worlds</a></h2>
         <p>AR is changing how we interact with information, entertainment, and the world.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="serverless.html">Serverless Computing: Simplifying the Cloud</a></h2>
         <p>How serverless is changing cloud development and enabling rapid innovation.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="digital-twins.html">Digital Twins: Bridging Physical and Virtual Worlds</a></h2>
         <p>Virtual replicas for real-time monitoring, simulation, and optimization.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="phishing-attacks.html">Phishing Attacks: How to Spot and Prevent Them</a></h2>
         <p>How to recognize and defend against phishing scams in the digital age.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="ransomware.html">Ransomware: The Growing Threat to Businesses</a></h2>
         <p>Understanding ransomware and how to protect your organization.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="social-engineering.html">Social Engineering: Manipulating the Human Element</a></h2>
         <p>Psychological tactics used by attackers and how to defend against them.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="iot-security.html">IoT Security: Protecting Connected Devices</a></h2>
         <p>Best practices for securing smart devices and environments.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="zero-day-vulnerabilities.html">Zero-Day Vulnerabilities: Staying Ahead of Unknown Threats</a>
         </h2>
         <p>How to defend against hidden software and hardware threats.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="vertical-farming.html">Vertical Farming: The Future of Urban Agriculture</a></h2>
         <p>How vertical farming is revolutionizing food production in cities.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="wearable-health-tech.html">Wearable Health Tech: Monitoring Wellness in Real Time</a></h2>
         <p>The impact of smartwatches and biosensors on personal wellness.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="renewable-energy-storage.html">Renewable Energy Storage: Powering a Sustainable Future</a></h2>
         <p>How advances in energy storage are enabling the growth of renewables.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="smart-textiles.html">Smart Textiles: The Fabric of the Future</a></h2>
         <p>Integrating electronics into fabrics for health, sports, and fashion.</p>
       </article>
-      <article class="blog-tile">
+      <article class="blog-tile reveal">
         <h2><a href="biodegradable-plastics.html">Biodegradable Plastics: Reducing Environmental Impact</a></h2>
         <p>How new materials are helping to address plastic pollution.</p>
       </article>
     </section>
-    <style>
-      .blog-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-        margin: 0 auto;
-        padding: 2.5rem 1rem 2rem 1rem;
-        max-width: 1200px;
-      }
-
-      .blog-tile {
-        border-radius: 20px;
-        background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
-        box-shadow: 0 8px 32px rgba(44, 62, 80, .10);
-        padding: 2rem 1.5rem;
-        transition: box-shadow .3s, transform .3s, background .3s;
-        border: none;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-      }
-
-      .blog-tile:hover {
-        transform: translateY(-10px) scale(1.04);
-        box-shadow: 0 18px 44px rgba(44, 62, 80, .18);
-        background: linear-gradient(135deg, #e0e7ef 60%, #fff 100%);
-      }
-
-      .blog-tile h2 {
-        font-size: 1.5rem;
-        margin-bottom: .3rem;
-        letter-spacing: -0.5px;
-      }
-
-      .blog-tile h2 a {
-        color: #2563eb;
-        text-decoration: none;
-        transition: color .2s;
-      }
-
-      .blog-tile h2 a:hover {
-        color: #7c3aed;
-      }
-
-      .blog-tile p {
-        color: #475569;
-        font-size: 1.08rem;
-        margin-top: .2rem;
-      }
-    </style>
   </main>
   <footer>
     <p>Blog - <a href="https://vishmeluck.com" target="_blank" rel="noopener"

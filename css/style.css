@@ -149,15 +149,20 @@ a:hover {
 
 /* Blogs Hero */
 .blog-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/blogs-banner.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/blogs-banner.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 8rem 1rem 6rem 1rem;
+  padding: 8rem 1rem 8rem 1rem;
+  /* Increased padding for consistency */
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
   text-align: center;
   color: #fff;
   box-shadow: 0 8px 32px rgba(44, 62, 80, .10);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .blog-hero h1 {
